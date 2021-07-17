@@ -25,3 +25,12 @@ In `composer.json` file under `autoload` add this file and run `composer dump-au
     echo BanglaConverter::bn_word(123456);
     
 > Output: এক লক্ষ তেইশ হাজার চার শত ছাপ্পান্ন 
+
+### Convert others like date, mobile no or other string which contain number
+    echo BanglaConverter::bn_others('2021-07-17');
+
+> Output: ২০২১-০৭-১৭
+
+    echo BanglaConverter::bn_others(0186322222);
+
+> Output: ০১৮৬৩২২২২২

@@ -186,4 +186,10 @@ class BanglaConverter
         
         return $txt;
     }
+
+    public static function bn_others($number)
+    {
+        return strtr($number, self::$bn);
+    }
+    
 }
